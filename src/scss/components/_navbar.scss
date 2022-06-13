@@ -1,0 +1,9 @@
+.navbar{
+  &-brand {
+    max-width:toUnit(calc(45/$df-fs), rem);
+
+    >img{
+      max-height: toUnit(calc(50/$df-fs), rem);
+    }
+  }
+}

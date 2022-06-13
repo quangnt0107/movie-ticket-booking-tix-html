@@ -1,0 +1,9 @@
+#posters, #posters-carousel, .carousel-inner, .carousel-item, .carousel-item>img{
+  height: 100%;
+}
+
+#posters{
+  position: relative;
+  top: toUnit(calc(-72/$df-fs), rem);
+}
+

@@ -1,0 +1,20 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  // 992px(large) - 1920px
+  font-size: calc($df-fs / $w-design * 100) + vw;
+
+  // from 1921px
+  @media (min-width: ($w-design+1px)) {
+    font-size: calc($df-fs/16) + rem;
+  }
+  // 576px - 991px(medium)
+  @media (max-width:($re-lg - 1px)){
+    font-size: calc($df-fs/($re-lg - 1)*100) + vw;
+  }
+  // 0-575px(extra small)
+  @media (max-width: ($re-sm - 1px)){
+    font-size:calc($df-fs/($re-sm - 1)*100) + vw;
+  }
+}
